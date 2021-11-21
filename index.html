@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Счетчик калорий</h1>
+    <form action="">
+        <div class="first">
+            <h2>
+                Пол
+            </h2>
+            <ul class="switcher">
+              <li class="switcher_item">
+                <input id="gender_male" name="gender"  value="men" type="radio" checked required>
+                <label for="gender_male">Мужщина</label>
+              </li>
+              <li class="switcher_item">
+                <input id="gender_female" name="gender" value="women" type="radio" required>
+                <label for="gender_female">Женщина</label>
+              </li>    
+            </ul>
+        </div>
+        <div class="second">
+            <div class="input">
+                <div class="heading">
+                    <label for="age">Возраст</label>
+                    <span>лет</span>
+                </div>
+                <div class="inputfiz">
+                 <input class="fiz_charc" id ="age" placeholder="0"  maxlength="3" type="text" inputmode="decimal" >
+                 </div>
+            </div>
+            <div class="input">
+                <div  class="heading">
+                    <label for="height">Рост</label>
+                    <span>см</span>
+                </div>
+                <div class="inputfiz">
+                    <input class="fiz_charc" id="height" placeholder="0"  maxlength="3" type="text" inputmode="decimal" >
+                </div>
+            </div>  
+            <div class="input">
+                <div  class="heading">
+                    <label for="weigth">Вес</label>
+                    <span>кг</span>
+                </div>
+                <div class="inputfiz">
+                    <input class="fiz_charc" id ="weight" placeholder="0"  maxlength="3" type="text" inputmode="decimal" >
+                </div>
+            </div>
+        </div>
+        <div class="third">
+            <h2>
+                Физическая активность
+            </h2>
+            <ul class=" radio_group">
+                <li>
+                    <input type="radio" value="min" id="min" name="activity" checked required>
+                    <label for="min">Минимальная</label>
+                    <p>Сидячая работа и нет физических нагрузок</p>
+                </li>
+                <li>
+                    <input type="radio" value="niz" id="niz" name="activity" required>
+                    <label for="niz"> Низкая</label>
+                    <p>Редкие, нерегулярные тренировки, активность в быту</p>
+                </li>
+                <li>
+                    <input type="radio" value="midle" id="midle" name="activity" required>
+                    <label for="midle">Средняя</label>
+                    <p>Тренировки 3-5 раз в неделю</p>
+                </li>
+                <li>
+                    <input type="radio" value="high" id="high" name="activity" required>
+                    <label for="high">Высокая</label>
+                    <p>Тренировки 6-7 раз в неделю</p>
+                </li>
+                <li>
+                    <input type="radio" value="veryhigh" id="veryhigh" name="activity" required>
+                    <label for="veryhigh">Очень высокая</label>
+                    <p>Больше 6 тренировок в неделю и физическая работа</p>
+                </li>
+            </ul>
+        </div>
+        <div class="fourth">
+            <button type="button" class="butsubmit"  disabled> Расчитать</button>
+            <button type="button" class="butreset"  disabled>
+                <svg width="24" height="24" fill="#FD3636" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.414 12l5.293-5.293a.999.999 0 10-1.414-1.414L12 10.586 6.707 5.293a.999.999 0 10-1.414 1.414L10.586 12l-5.293 5.293a.999.999 0 101.414 1.414L12 13.414l5.293 5.293a.997.997 0 001.414 0 .999.999 0 000-1.414L13.414 12z"></path></svg>
+                <span>Очисть поля и расчет</span>
+            </button>
+        </div>
+    </form>
+    <div class="surprise">
+        <h2>Ваша норма калорий</h2>
+        <ul>
+            <li>
+                <h3 class="fresult"></h3> <span>ккал</span>
+                <p>поддержание веса</p>
+            </li>
+            <li>
+                <h3 class="sresult"></h3> <span>ккал</span>
+                <p>снижение веса</p>
+            </li>
+            <li>
+                <h3 class="tresult"></h3> <span>ккал</span>
+                <p>набор веса</p>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<b</b>
